@@ -11,6 +11,15 @@ drawing_board.listen()
 
 def turtle_forward():
     turtle_instance.forward(100)
+
+def rotate_angle_right():
+    turtle_instance.right(10)
+
+def rotate_angel_left():
+    turtle_instance.left(10)
+
 drawing_board.onkey(fun=turtle_forward,key="space")
+drawing_board.onkey(fun=rotate_angle_right,key="Down")
+drawing_board.onkey(fun=rotate_angel_left,key="Up")
 
 turtle.mainloop()
